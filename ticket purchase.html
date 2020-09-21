@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Converts IE to Edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Adjusts Width -->
+
+    <!-- Title -->
+    <title> Dank Festivals | The Music Festival For Gamers </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/fontawesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav role="navigation" class="navbar navbar-inverse festival-top-nav navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="festival-nav-wrapper">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#festival-menu">
+                            <span class="sr-only"> Toggle navigation </span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html#home">
+                            <p> DANK FEST | GAMING FESTIVAL </p>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="festival-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html"> Home </a></li>
+                            <li><a href="index.html#acts"> Acts </a></li>
+                            <li><a href="index.html#ticket-prices"> Ticket Prices </a></li>
+                            <li><a href="index.html#location"> Locations </a></li>
+                            <li><a href="index.html#facilities"> Facilities </a></li>
+                            <li><a href="index.html#contact"> Contact </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-title-underline-division wow lightSpeedIn"></div>
+
+    <!-- Ticket Purchase -->
+    <div class="background-ticket-prices">
+        <section id="facilities">
+            <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3> Puchase a Ticket </h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p align="center">
+            Please use the form below to complete a purchase.
+        </p>
+        <form action="purchase.php" method="POST" >
+            <p align="center">
+                * Indicates a required field.
+            </p>
+            <fieldset>
+                <legend align="center">Contact Details</legend>
+                <div class="form-control-purchase">
+                    <label for="name">Name*:</label>
+                    <input type="text" name="name" id="name" placeholder="e.g. Joey Tribbiani" autofocus required maxlength="65" tabindex="1">
+                </div>
+                <div class="form-control-purchase">
+                    <label for="phone">Phone*:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="e.g. 000-000-0000" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" required title="Please provide your phone number in the following format: 000-000-0000" tabindex="2">
+                </div>
+                <div class="form-control-purchase">
+                    <label for="email">Email*:</label>
+                    <input type="email" name="email" id="email" placeholder="e.g. joe@example.com" required tabindex="3">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend align="center">Ticket Information</legend>
+                <div class="form-control-purchase">
+                    <label for="restaurant">Ticket:*</label>
+                    <select name="restaurant" id="restaurant" required tabindex="4">
+				  			<option> Adult Ticket </option>
+				  			<option> Teen Ticket </option>
+				  			<option> Child Ticket </option>
+                            <option> Elderly Ticket </option>
+                            <option> Student Ticket </option>
+                            <option> Disabled Ticket </option>
+                            <option> VIP Standard </option>
+                            <option> VIP Ultimate </option>
+				    </select>
+                </div>
+                <div class="form-control-purchase">
+                    <label for="bookingTime"> Date:*</label>
+                    <select name="restaurant" id="restaurant" required tabindex="4">
+				  			<option> 24 / 01 / 19 </option>
+				  			<option> 27 / 03 / 19 </option>
+				  			<option> 09 / 05 / 19 </option>
+                            
+				    </select>
+                </div>
+            </fieldset>
+            <div id="purchase-btn">
+                <a class="btn btn-lg btn-general purchase-btn" href="#" role="button">Proceed to Payment</a>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        
+    </div>
+    <div class="content-title-underline-division wow lightSpeedIn"></div>
+
+    <footer>
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="footer-copyrights">
+                            <p> Copyrights &copy; 2018 All Rights Reserved by Dank Festivals Co.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="footer-menu">
+                            <ul>
+                                <li><a href="#home"> Home </a>/</li>
+                                <li><a href="#acts"> Acts  </a>/</li>
+                                <li><a href="#ticket-prices"> Ticket Prices  </a>/</li>
+                                <li><a href="#location"> Locations </a>/</li>
+                                <li><a href="#facilities"> Facilities </a>/</li>
+                                <li><a href="#contact"> Contact </a></li>
+                            </ul>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="js/jquery.js">
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <script src="js/bootstrap/bootstrap.min.js">
+    </script>
+
+    <!-- WOW.JS -->
+    <script src="js/wow/wow.min.js"></script>
+
+    <!-- Amimates the text when user scrolls -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- JS -->
+    <script src="js/custom.js">
+    </script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+

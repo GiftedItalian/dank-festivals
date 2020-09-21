@@ -1,0 +1,454 @@
+/*============================================================
+                    
+                       Festival CSS
+
+Font Family: Lato
+
+White lilac: #dcdcdd 
+Grey:        #bbbbbb (Background color)
+Tuna:        #46494c (Headings)   
+Fiord:       #4c5c68 (Paragraphs)
+Pelorous:    #1985A1 (buttons etc)
+
+============================================================*/
+
+/* General CSS */
+
+html,
+body {
+
+    height: 100%;
+}
+
+body {
+
+    font-family: "Lato", sans-serif;
+
+}
+
+h3 {
+
+    text-transform: uppercase;
+    color: #46494c;
+}
+
+p {
+    color: #4c5c68;
+    font-size: 16px;
+}
+
+/*=============================================================
+                        HOME
+===========================================================*/
+
+#home {
+
+    height: 100%;
+}
+
+#home-cover {
+
+    height: 100%;
+    background-image: url("../img/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home-content-box {
+
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#home-heading h1 {
+
+    color: #dcdcdd;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#home-motto h3 {
+
+    color: #dcdcdd;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/*=============================================================
+                    PARALLAX (Generic)
+===========================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/*=============================================================
+                    BUTTONS (Generic)
+===========================================================*/
+
+.btn-general {
+
+    border-width: 2px;
+    border-radius: 0;
+    padding: 15px 30px 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #dcdcdd;
+    color: #dcdcdd;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #dcdcdd;
+    color: #46494c;
+}
+
+.btn-tuna {
+    border-color: #46494c;
+    color: #46494c;
+    margin-left: 45px
+}
+
+.btn-tuna:hover,
+.btn-tuna:focus {
+    background-color: #dcdcdd;
+    color: #46494c;
+}
+
+.btn-tuna-contact {
+    border-color: #46494c;
+    color: #46494c;
+}
+/*=============================================================
+                    ANIMATE
+===========================================================*/
+
+#home-cover {
+    animation-delay: .1s;
+    animation-duration: .5s;
+}
+
+#home-heading {
+    animation-delay: .4s;
+    animation-duration: .5s;
+}
+
+#home-motto {
+    animation-delay: .8s;
+    animation-duration: .5s;
+}
+
+#home-btn {
+    animation-delay: 1.2s;
+    animation-duration: .5s;
+}
+
+#content-title
+/*=============================================================
+                CONTENT (Generic)
+===========================================================*/
+
+.content-box {
+    padding: 60 0 60px 0;
+    background: url(../img/acts-gaming-pattern.png);
+
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 100px 0 10px 0;
+    margin: 0 0 0 0;
+}
+
+.content-title-underline {
+    width: 100px;
+    height: 3px;
+    background-color: #1985A1;
+    margin: 0 auto 30px auto;
+    /*align center technique*/
+}
+
+.content-title-underline-division {
+    width: 100%;
+    height: 3px;
+    background-color: #1985A1;
+    margin: 0 auto 0 auto;
+    /*align center technique*/
+    padding: 0 0 0 0;
+}
+
+.background-acts {
+    /*background-color: #e6e6e6;*/
+    background: url(../img/pattern2.png)no-repeat center center;
+    background-size: cover;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.background-contact {
+    background-color: #bbbbbb;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.background-ticket-prices {
+    background: url(../img/acts-background2.jpg)no-repeat center center;
+    background-size: cover;
+    background-attachment: fixe;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+
+/*=============================================================
+                        ACTS 
+===========================================================*/
+
+.acts-item {
+    padding: 20px 0 90px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.acts-item-icon img {
+    color: #1985A1;
+    float: left;
+    padding: 15px;
+    margin-right: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+.acts-item:hover .acts-item-icon i {
+    color: #dcdcdd;
+    background-color: #1985A1;
+}
+
+.acts-item-title h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.acts-item-desc p {
+    margin: 0;
+    padding-left: 85px;
+}
+
+
+/*=============================================================
+                        LOCATIONS
+===========================================================*/
+
+.location-date {
+    padding: 0 0 90px 0;
+}
+
+
+/*=============================================================
+                        FACILITIES
+===========================================================*/
+
+.facilities-item {
+    padding: 20px 0 20px 0;
+    color: white !important;
+}
+
+.facilities-item-bottom {
+    padding: 0 0 90px 0
+}
+
+/*=============================================================
+                       CONTACT
+===========================================================*/
+
+.field label {
+    padding: 0 30px 0 0;
+}
+
+.field input {
+    width: 282px;
+}
+
+#contact-content-box {
+    float: left;
+    height: 700px;
+    vertical-align: center;
+}
+
+#contact-bg-diagonal {
+    width: 55%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/office-image.jpg);
+    background-size: cover;
+    border-left: 200px solid #bbbbbb;
+    border-top: 700px solid transparent;
+}
+
+form .form-control {
+    background: transparent;
+    border radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    width: 400px;
+    
+}
+
+
+/*=============================================================
+                        FOOTER
+===========================================================*/
+
+#footer-bottom {
+    background-color: #46494c;
+    padding: 30px 0;
+    padding-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/*=============================================================
+                        NAVIGATION
+===========================================================*/
+
+.navbar {
+    padding: 15px 0
+}
+
+.festival-top-nav{
+    opacity: 0.9;
+}
+
+.festival-top-nav p{
+    color: white;
+}
+
+.festival-nav-wrapper{
+    padding: 0 85px;
+}
+
+.navbar-nav{
+    float:right;
+    
+}
+
+.navbar-nav > li > a{
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+
+
+/*=============================================================
+                        GOOGLE MAPS
+===========================================================*/
+
+.mapouter {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+}
+
+.gmap_canvas {
+    background: none!important;
+    height: 300px;
+    width: 300px;
+}
+
+/*=============================================================
+                        Purchase
+===========================================================*/
+
+form .form-control-purchase {
+    background: transparent;
+    border radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding:8px 16px;
+    padding-left: 50vh;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+form .form-control-purchase input {
+    width: 50vw;
+}
+
+form .form-control-purchase select {
+    width: 50vw;
+}
+
+.purchase-btn{
+    border-color: #46494c;
+    color: #46494c;
+    margin-left: 40vw;
+}
+
+.purchase-btn:hover,
+.purchase-btn:focus {
+    background-color: #dcdcdd;
+    color: #46494c;
+    
+}
